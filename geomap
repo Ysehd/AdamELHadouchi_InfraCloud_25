@@ -13,4 +13,7 @@ devnet_alt = location.altitude
 #print("Altitude: ", devnet_alt)
 coordinates = [devnet_lat,devnet_lon]
 map = folium.Map(location=coordinates, titles='OpenStreetMap', zoom_start=12)
-display(map)
+map
+#### save method of Map object will create a map
+#### saved in Downloads
+map.save("geopy_location.html")
